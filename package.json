@@ -1,0 +1,60 @@
+{
+  "name": "rh-ts-type",
+  "version": "0.0.2",
+  "description": "方法包",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only ./__test__/index.ts",
+    "devD": "ts-node-dev --respawn --transpile-only ./__test__/test_d.ts",
+    "dev_test": "ts-node-dev --respawn --transpile-only ./src/__test__/test_rh.ts",
+    "restart": "rimraf dist && npm run build && npm start",
+    "start": "node ./dist/index.js",
+    "prod": "npm run build && npm run start",
+    "pub": "npm publish",
+    "prepare": "husky install",
+    "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx",
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --fix --quiet",
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint:style": "stylelint src/**/*.{css,less,scss} --fix "
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "type"
+  ],
+  "author": "ruihuag",
+  "license": "ISC",
+  "lint-staged": {
+    "*.{ts,js,tsx}": [
+      "eslint",
+      "echo 'no error'"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/node": "^16.11.22",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "commitizen": "^4.2.4",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "node-notifier": "^8.0.2",
+    "prettier": "^2.5.1",
+    "rh-js-methods": "^1.0.2",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  }
+}
