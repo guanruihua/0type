@@ -21,6 +21,6 @@
   "rules": {
     "no-prototype-builtins": "off",
     "prefer-rest-params": "off",
-    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }
