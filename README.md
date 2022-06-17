@@ -2,12 +2,12 @@
 
 ## ts 内置常用 & 拓展
 
-> 拓展内置类型名前加`E`, 表示对原有的类型进行拓展
+- 拓展内置类型名前加`E`, 表示对原有的类型进行拓展
 
 ### `Record<K, T>`
 
-> 生成属性为`K`, 类型为`T`的类型几何
-> `K` 只支持 `number`, `string` , `symbol` 的类型
+- 生成属性为`K`, 类型为`T`的类型几何
+- `K` 只支持 `number`, `string` , `symbol` 的类型
 
 ```ts
  const t1: Record<'s' |  -1 | symbol, number> = {
@@ -20,7 +20,7 @@
 
 #### `ERcord<K, T>`
 
-> 拓展`K`的支持类型 `null, undefined, boolean`
+- 拓展`K`的支持类型 `null, undefined, boolean`
 
 ```ts
  const te1: ERecord<null | undefined| true | false | '12', 1> = {
@@ -34,7 +34,7 @@
 
 ### `Partial<T>`
 
-> 全部变可选
+- 全部变可选
 
 ```ts
  type tt = {
@@ -47,7 +47,7 @@
 
 ### `Required<T>`
 
-> 全部变必填
+- 全部变必填
 
 ```ts
  type tt = {
@@ -63,7 +63,7 @@
 
 ### `Readonly<T>`
 
-> 全部变只读
+- 全部变只读
 
 ```ts
  type tt = {
@@ -80,7 +80,7 @@
 
 ### `Pick<T,K>`
 
-> 提取指定属性
+- 提取指定属性
 
 ```ts
  type tt = {
@@ -100,7 +100,7 @@
 
 ### `Exclude<T,U>`
 
-> 从`T`中排除掉所有包含`U`的属性
+- 从`T`中排除掉所有包含`U`的属性
 
 ```ts
  type tt = number | string | boolean
@@ -110,7 +110,7 @@
 
 ### `Extact<T,U>`
 
-> 提取T和U都有的
+- 提取T和U都有的
 
 ```ts
  type tt = number | string | boolean
@@ -120,7 +120,7 @@
 
 ### `NonNullable<T>`
 
-> 去除掉`null`和`underfined`
+- 去除掉`null`和`underfined`
 
 ```ts
 // 不可以为 null 和 undefined
@@ -130,7 +130,7 @@ const t2: NonNullable<123> = 123
 
 ### `Omit<T,K>`
 
-> 忽略T中的K属性
+- 忽略T中的K属性
 
 ## 基础类型
 
