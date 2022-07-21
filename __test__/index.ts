@@ -1,5 +1,10 @@
 import { ArrayLike, ERecord, FunctionLike, ObjectLike, StringLike } from '../src'
 
+{
+	interface btype{
+		a:'aaa'
+	}
+}
 
 {
 	const t1: StringLike = '123'
