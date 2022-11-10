@@ -1,4 +1,4 @@
-import { ObjectKey } from './../object';
+import { ObjectKey } from '.'
 /**
  * Record 拓展
  */

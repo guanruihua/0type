@@ -2,7 +2,7 @@
   "name": "rh-ts-type",
   "version": "0.0.2",
   "description": "方法包",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./__test__/index.ts",
     "devD": "ts-node-dev --respawn --transpile-only ./__test__/test_d.ts",
