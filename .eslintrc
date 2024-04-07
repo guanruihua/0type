@@ -4,15 +4,14 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
   ],
-  "plugins": ["@typescript-eslint"],
   "env": {
     "browser": true,
     "node": true,
     "es6": true
   },
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "ecmaVersion": 2022,
+    "project": true,
+    "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true
