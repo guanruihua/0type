@@ -21,3 +21,19 @@ export type ValueOf<T> = T[keyof T]
  */
 export type Keyof<T> = keyof T
 
+
+
+/**
+ * 对象类型
+ */
+export type ObjectType<Value = unknown> = Record<string, Value>
+
+/**
+ * Map类型
+ */
+export type MapType<Value = unknown> = Map<string | number, Value>
+
+/**
+ * Set类型
+ */
+export type SetType<Value = unknown> = Set<Value>
