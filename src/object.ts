@@ -1,4 +1,3 @@
-export * from './expand'
 
 /**
  * 类 object
@@ -14,26 +13,24 @@ export type ObjectKey = number | string | symbol
 /**
  * 取出所有属性值
  */
-export type ValueOf<T> = T[keyof T]
+export type ValueOf<T = any> = T[keyof T]
 
 /**
  * 取出所有的属性名
  */
-export type Keyof<T> = keyof T
-
-
+export type Keyof<T = any> = keyof T
 
 /**
  * 对象类型
  */
-export type ObjectType<Value = unknown> = Record<string, Value>
+export type ObjectType<Value = any> = Record<string, Value>
 
 /**
  * Map类型
  */
-export type MapType<Value = unknown> = Map<string | number, Value>
+export type MapType<Value = any> = Map<string | number, Value>
 
 /**
  * Set类型
  */
-export type SetType<Value = unknown> = Set<Value>
+export type SetType<Value = any> = Set<Value>

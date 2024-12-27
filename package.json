@@ -1,6 +1,6 @@
 {
   "name": "0type",
-  "version": "0.0.3",
+  "version": "0.2.0",
   "description": "ts类型包",
   "main": "src/index.ts",
   "scripts": {
